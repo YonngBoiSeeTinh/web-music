@@ -1,0 +1,29 @@
+import React from 'react';
+import './MessageBar.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay, faForwardFast, faVolumeHigh } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom';
+
+const PlayListSongItem = ({arrSong}) => {
+  return (
+    <>
+    {arrSong.map((song,index) =>(
+    <div className="message-bar  active" key={index}>
+            <div className="signal-icon" />
+            <span className="nameSong">{song.name}</span>
+            <span className="artist">-{song.artist}</span>
+            <div className="actions">
+              <button className="action-button pause"> <FontAwesomeIcon icon={faPlay}/></button>
+              <button className="action-button favorite"></button>
+              <button className="action-button download"></button>
+              <button className="action-button copy"></button>
+            </div>
+        </div>
+   
+   ))}
+  </>  
+    
+  );
+};
+
+export default PlayListSongItem;

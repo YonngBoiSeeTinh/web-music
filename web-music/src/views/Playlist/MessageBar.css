@@ -1,0 +1,53 @@
+.message-bar.active {
+    display: flex;
+    align-items: center;
+    background-color: #f2f6f7;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    margin-top: 8px;
+  }
+  .message-bar {
+    display: flex;
+    align-items: center;
+    border-bottom: #d9d9d9 1px solid;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    margin-top: 8px;
+  }
+  
+  .signal-icon {
+    width: 16px;
+    height: 16px;
+    background-color: #00aaff;
+    margin-right: 8px;
+    border-radius: 50%;
+  }
+  
+  .nameSong {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .artist {
+    color: #909090;
+    margin-left: 4px;
+  }
+  
+  .actions {
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .action-button {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    background-color: #f2f6f7;
+  }
+  

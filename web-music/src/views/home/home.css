@@ -1,0 +1,133 @@
+.home-container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+
+.banner{
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 80%;
+    height: 360px;
+}
+.banner-item img{
+    width: 80%;
+    height: 350px;  
+    margin: 0 auto; 
+}
+/* .banner-item.center img{
+    width: 120px;
+    height: 300px;
+    margin: auto 450px;
+}*/
+
+
+
+
+
+.ranking{
+    width: 30%;
+    margin-left: 50px;
+    height: 1000px;
+   
+    margin-right: 10px;
+    margin-top: 40px;
+}
+.rank-title{
+    font-size: 25px;
+    color: rgb(31, 141, 244);
+    font-style: bold;
+    margin-left: 20px;
+}
+.topic{
+    width: 70%;
+    height: 1000px;
+    margin-left: 15px;
+}
+#topic-name{
+    margin-top: 50px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+#topic-list{
+    display: flex;
+    margin-left: 10px;
+}
+.topic-item_list{
+    display: flex;
+   margin-top: 20px;
+   
+   
+}
+
+.topic-item-img:hover{
+    cursor: pointer;
+    transform: translateY(-5px); /* Di chuyển lên trên 5px */
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng shadow */
+    filter: brightness(0.9); /* Làm tối nhẹ hình ảnh */
+}
+
+.topic-item-img {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(17, 217, 90);
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+a{
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+}
+.topic-item-img img {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(17, 217, 90);
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.topic-item-name{
+   margin: 10px;
+}
+.rank-nav{
+    display: flex;
+    background-color: rgb(215, 222, 222);
+    border-radius: 20px;
+    margin: 0 20px;
+}
+.rank-nav-item{
+    width: 300px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rank-nav-item.active {
+    background-color: rgb(240, 115, 20);
+}
+
+.item-1{
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+}
+.item-2{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+ }
+ .item-1.active{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(240, 115, 20);
+ }
+ .item-2.active{
+     border-top-right-radius: 20px;
+     border-bottom-right-radius: 20px;
+     background-color: rgb(240, 115, 20);
+  }
+.rank-nav-item:hover{ 
+    cursor: pointer;
+    background-color: rgba(231, 133, 59, 0.841);
+    box-shadow: 2px 8px 14px rgba(226, 129, 59, 0.4); /* Thêm hiệu ứng shadow */
+}
