@@ -57,6 +57,20 @@ const SongPlay = () => {
             setIsPlaying(true); // cập nhật trạng thái đang phát
         }
     }, [songPlay]);
+
+    useEffect(() => {
+        const handleBeforeUnload = () => {
+            localStorage.setItem('currentSongIndex', currentSongIndex); // Lưu chỉ số bài hát
+        };
+    
+        // Thêm sự kiện 'beforeunload' để lưu trạng thái khi người dùng reload trang
+        window.addEventListener('beforeunload', handleBeforeUnload);
+    
+        
+        return () => {
+            window.removeEventListener('beforeunload', handleBeforeUnload);
+        };
+    }, [currentSongIndex]);
     
     // Nếu đang tải hoặc có lỗi, trả về các thông báo
     if (queryDetail.isLoading || querySong.isLoading) {

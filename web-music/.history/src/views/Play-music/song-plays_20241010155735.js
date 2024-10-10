@@ -10,7 +10,6 @@ const SongPlay = () => {
     const { id } = useParams(); // lấy id từ URL
     const [currentSongIndex, setCurrentSongIndex] = useState(-1); 
     const [isPlaying, setIsPlaying] = useState(false); // theo dõi trạng thái phát nhạc
-
     const audioRef = useRef(null); // tạo ref cho phần tử audio
 
     const [currentTime, setCurrentTime] = useState(0); // Thời gian hiện tại của bài hát
@@ -51,13 +50,13 @@ const SongPlay = () => {
     const songPlay = currentSongIndex === -1 ? songDetail : arrSong[currentSongIndex]; // nếu currentSongIndex = -1 thì lấy từ getDetail
 
     useEffect(() => {
-        if (audioRef.current && songPlay && !isPlaying) {
+        if (audioRef.current && songPlay ) {
             audioRef.current.src = songPlay.audioFile; // gán nguồn audio
             audioRef.current.play(); // phát nhạc
             setIsPlaying(true); // cập nhật trạng thái đang phát
         }
     }, [songPlay]);
-    
+
     // Nếu đang tải hoặc có lỗi, trả về các thông báo
     if (queryDetail.isLoading || querySong.isLoading) {
         return <div>Loading...</div>;
