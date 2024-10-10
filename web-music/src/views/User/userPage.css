@@ -1,0 +1,126 @@
+/* General layout */
+.user-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;   
+}
+
+/* Profile Section */
+.user-profile {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.avatar-section {
+    margin-right: 20px;
+}
+
+.user-avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.user-email {
+    font-size: 18px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.user-role {
+    font-size: 16px;
+    color: #888;
+    margin: 5px 0;
+}
+.user-action{
+    display: flex;
+}
+.user-action button{
+    
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+   
+}
+
+.logout-btn{
+    margin-left: 20px;
+    background-color: #878686;
+}
+.edit-profile-btn {
+    background-color: #3375bd;
+}
+.edit-profile-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Account Details Section */
+.account-details {
+    width: 80%;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.account-details h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.account-table {
+    width: 90%;
+    margin: 0 auto;
+}
+.account-table_row{
+    display: flex;
+    width: 100%;
+    background-color: #666;
+    color: #181818;
+    border-radius: 5px;
+    margin: 10px auto;
+    
+}
+.table_row-infor{
+    width: 68%;
+    font-weight: bold;
+    color: #181818;
+    border-radius: 5px;
+    padding: 8px;
+   
+}
+.table_row-header{
+    width: 32%;
+    margin: auto 0;
+    background-color: #ebe8e8;
+    padding: 8px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+

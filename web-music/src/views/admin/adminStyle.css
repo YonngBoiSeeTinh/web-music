@@ -1,0 +1,18 @@
+.admin-layout{
+    width: 100%;
+    display: flex;
+}
+.main-content{
+width: 80%;
+margin-left: 280px;
+margin-top: 20px;
+height: 150vh;
+}
+.notify{
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

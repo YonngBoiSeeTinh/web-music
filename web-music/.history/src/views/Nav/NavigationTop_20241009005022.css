@@ -1,0 +1,102 @@
+.sub-menu {
+    
+    width: 100%; 
+    background-color: #ffffff;
+    padding: 5px 10px; 
+    border-bottom: #9d9d9d 1px solid;
+    position: fixed; /* Đặt vị trí cố định */
+    top: 0; /* Đặt nó ở đầu trang */
+    left: 0; /* Căn lề trái */
+    z-index: 1000; /* Đảm bảo thanh menu luôn ở trên các phần tử khác */
+     color: #9d9d9d;
+     height: 50px;
+}
+.sub-menu-item{
+    display: flex; 
+}
+.sub-menu-1, .sub-menu-2,.sub-menu-3 {
+    display: flex; 
+ 
+}
+.sub-menu-1{
+   margin: auto 0;
+   width: 40%;
+   margin-left: 80px;
+}
+.sub-menu-1 ul{  
+    margin: auto 0;
+ }
+.sub-menu-2{
+    width: 40%;
+}
+.sub-menu-3{
+    border-left: #333 1px solid;
+    display: flex;
+  width: 20%;
+}
+.lst-menu {
+    list-style: none; 
+    display: flex; 
+}
+
+.lst-menu li {
+    margin-right: 20px; 
+}
+
+.lst-menu li:last-child {
+    margin-right: 0; 
+}
+
+.sub-menu a {
+    text-decoration: none; 
+    color: #333; 
+   padding: 2px;
+}
+
+
+.sub-menu li a:hover {
+    color: #0b7ffc; 
+    cursor: pointer;
+   
+}
+
+.search-bar{
+    width: 300px;
+    height: 30px;
+    border: #f0f0f0 1px solid;
+    border-radius: 5px;
+    background-color: #fdfbfb;
+    margin-top: -5px;
+    align-content: center;
+    padding-left: 10px;
+}
+.logo{
+    width: 100px;
+    height: 40px;
+    background-image: url('./logo.png');
+    margin: auto 10px;
+    background-size: cover;
+}
+
+.register{
+    background-color: #5092dd;
+    border-radius: 8px;
+    height: 35px;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 10px;
+    color: #f0f0f0;
+}
+.login{
+  
+    border-radius: 8px;
+    height: 35px;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 10px;
+    color: #f0f0f0;
+}

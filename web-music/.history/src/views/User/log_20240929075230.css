@@ -1,0 +1,126 @@
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(90, 90, 90, 0.752); /* Màu đen trong suốt */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 12; /* Đảm bảo lớp phủ luôn ở trên cùng */
+    }
+
+    /* Modal chứa component Login */
+    .login-modal {
+        padding: 20px;
+        border-radius: 8px;
+        width: 440px;
+        max-width: 90%;
+        position: relative;
+        z-index: 1001;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding-bottom: 40px;
+    }
+    .signup-modal{
+        padding: 20px;
+        border-radius: 8px;
+        width: 440px;
+        max-width: 90%;
+        position: relative;
+        z-index: 1001;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding-bottom: 40px;
+        height: 720px;
+    }
+    /* Nút đóng */
+    .close-button {
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        color: #000000;
+        margin-left: 390px;
+    
+    }
+
+    /* Login container */
+    .login-container {
+        padding: 40px;
+        width: 400px;
+    
+        border-radius: 8px;
+        text-align: center;
+        margin: auto auto;
+    }
+    .signup-container {
+        padding: 40px;
+        width: 400px;
+    background-color: #ffffff;
+        border-radius: 8px;
+        text-align: center;
+        margin: auto auto;
+    }
+
+    /* Title */
+    .login-container h2 {
+        color: #000;
+        margin-bottom: 20px;
+    }
+
+    /* Form group */
+    .form-group-log {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    /* Label */
+    .form-group-log label {
+        color: #000;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    /* Input fields */
+    .form-group-log input[type="email"], input[type="password"],input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+    }
+
+    /* Submit button */
+    .login-container form button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .login-container form button[type="submit"]:hover {
+        background-color: #333;
+    }
+
+    /* Sign up link */
+    .login-container p {
+        color: #000;
+        margin-top: 20px;
+    }
+
+    .login-container a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .login-container a:hover {
+        text-decoration: underline;
+    }

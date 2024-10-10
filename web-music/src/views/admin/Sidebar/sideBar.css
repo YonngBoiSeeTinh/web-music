@@ -1,0 +1,61 @@
+.sidebar {
+    width: 250px; 
+    height: 100vh; 
+    background-color: #f8f9fa;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    border-right: 1px solid #dee2e6; /* Đường viền bên phải */
+    padding: 20px; /* Padding bên trong */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Đổ bóng cho sidebar */
+    z-index: 1000; /* Đặt z-index để luôn ở trên các phần tử khác */
+  }
+  
+  .nav {
+    list-style: none; /* Không hiển thị dấu đầu dòng */
+    padding: 0; /* Không có padding */
+    margin: 0; /* Không có margin */
+  }
+  
+  .nav-title {
+    font-weight: bold; /* Đặt chữ đậm cho tiêu đề */
+    margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+  }
+  
+  .nav-item {
+    margin: 15px 0; /* Khoảng cách giữa các mục */
+  }
+  
+  .nav-link {
+    text-decoration: none; /* Không gạch chân đường link */
+    color: #343a40; /* Màu chữ cho link */
+    font-weight: 500; /* Đặt chữ nửa đậm */
+    display: flex; /* Sử dụng flexbox để căn chỉnh icon và text */
+    align-items: center; /* Căn giữa theo chiều dọc */
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* Đổi màu khi hover */
+  }
+  
+  .nav-link i {
+    margin-right: 10px; /* Khoảng cách giữa icon và text */
+  }
+
+
+  .nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item {
+    padding: 15px;
+    margin: 10px 0;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+.nav-title{
+  margin: 10px;
+  font-size: 20px;
+}
