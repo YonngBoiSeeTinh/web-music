@@ -57,6 +57,32 @@ const SongPlay = () => {
             setIsPlaying(true); // cập nhật trạng thái đang phát
         }
     }, [songPlay]);
+
+    useEffect(() => {
+        const handleBeforeUnload = () => {
+            localStorage.setItem('currentSongIndex', currentSongIndex); // Lưu chỉ số bài hát
+        };
+    
+        // Thêm sự kiện 'beforeunload' để lưu trạng thái khi người dùng reload trang
+        window.addEventListener('beforeunload', handleBeforeUnload);
+    
+        
+        return () => {
+            window.removeEventListener('beforeunload', handleBeforeUnload);
+        };
+    }, [currentSongIndex]);
+
+    useEffect(() => {
+        const savedSongIndex = localStorage.getItem('currentSongIndex');
+    
+        if (savedSongIndex !== null && audioRef.current) {
+            setCurrentSongIndex(Number(savedSongIndex)); // Khôi phục chỉ số bài hát
+            audioRef.current.currentTime = 0; // Đặt lại thời gian phát về 0
+            audioRef.current.play(); // Phát lại từ đầu
+            setIsPlaying(true); // Cập nhật trạng thái đang phát
+        }
+    }, []);
+    
     
     // Nếu đang tải hoặc có lỗi, trả về các thông báo
     if (queryDetail.isLoading || querySong.isLoading) {

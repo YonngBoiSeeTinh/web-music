@@ -57,7 +57,7 @@ const SongPlay = () => {
             setIsPlaying(true); // cập nhật trạng thái đang phát
         }
     }, [songPlay]);
-    
+
     // Nếu đang tải hoặc có lỗi, trả về các thông báo
     if (queryDetail.isLoading || querySong.isLoading) {
         return <div>Loading...</div>;

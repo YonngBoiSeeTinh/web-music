@@ -13,6 +13,10 @@ const SongSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  duration: {
+    type: Number, // Thời lượng bài hát tính theo giây
+    required: true
+  },
   type: {
     type: String, // Thể loại nhạc (pop, hip-hop, v.v.)
     required: true

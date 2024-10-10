@@ -86,7 +86,7 @@ function App() {
             <Route path='/song_play/:id' element={<SongPlay />} />
             <Route path='/playListSong/:playlist' element={<PlaylistSong />} />
             <Route path='/userPage' element={<UserPage setIsSignIn={setIsSignIn} />} />
-            <Route path='/admin/' element={user.isAdmin ? <AdminLayout isAdmin={user.isAdmin} /> : <Navigate to="/" />}>
+            <Route path='/admin/' element={user?.isAdmin ? <AdminLayout isAdmin={user.isAdmin} /> : <Navigate to="/" />}>
               <Route index element={<AdminDasboard />} />
               <Route path='dashboard' element={<AdminDasboard />} />
             </Route>
